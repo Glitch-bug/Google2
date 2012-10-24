@@ -1,40 +1,5 @@
 /* Laptop sized viewports */
 /* top */
-/* body */
-/* base */
-#search {
-    position: absolute;
-    left: 28%;
-    padding-top: 15px;
-    object-fit: cover;
-    width: 15.5px;
-    height: 15.5px;
-    justify-self: center;
-}
-
-
-body {
-    display: flex;
-}
-
-#search_form {
-    margin-top: 5%;
-    width: 100%;
-    padding-top: 0;
-    padding-left: 0;
-    position: absolute;
-    left: 0;
-    right: 0;
-    font-family: sans-serif;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-#google {
-    padding-bottom: 20px;
-}
-
 #topside {
     position: absolute;
     top: 0;
@@ -47,33 +12,51 @@ body {
     align-items: center;
 }
 
-#bottom {
-    border-top: 1px solid lightgrey;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 40px;
-    width: 100%;
-    background-color: #eeefee;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+#profile {
+    width: 37px;
+    height: 37px;
+    border-radius: 100%;
+    
 }
 
-#near_bottom {
-    border-top: 1px solid lightgrey;
+#topside > a {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    outline: none;
+
+}
+
+
+/* body */
+#google {
+    padding-bottom: 20px;
+}
+
+#search_form {
+    margin-top: 5%;
+    width: 100%;
+    padding-top: 1%;
+    padding-left: 0;
     position: absolute;
-    bottom: 41px;
     left: 0;
     right: 0;
-    align-self: center;
-    height: 40px;
-    width: 100%;
-    background-color: #eeefee;
+    font-family: sans-serif;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    flex-flow: nowrap column;
 }
+
+#search {
+    position: absolute;
+    left: 28%;
+    padding-top: 15px;
+    object-fit: cover;
+    width: 15.5px;
+    height: 15.5px;
+    justify-self: center;
+}
+
 
 #bar {
     width: 47em;
@@ -88,13 +71,6 @@ body {
     box-shadow: 0px 0px 3px lightgrey ;
 }
 
-#profile {
-    width: 37px;
-    height: 37px;
-    border-radius: 100%;
-    
-}
-
 #buttons {
     display: flex;
     justify-content: center;
@@ -107,12 +83,11 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: nowrap;
 }
 
 #lingo > a {
-    padding-left: 0.85%;
-    padding-right: 0.85%;
+    padding-left: 0.95%;
+    padding-right: 0.95%;
     color: blue;
 }
 
@@ -131,6 +106,38 @@ body {
     background-color: rgb(247, 250, 247);
 }
 
+.button:hover {
+    border: 1.5px solid lightgray;
+}
+
+
+/* base */
+#bottom {
+    border-top: 1px solid lightgrey;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    width: 100%;
+    background-color: #eeefee;
+    display: flex;
+    justify-content: space-between;
+}
+
+#near_bottom {
+    border-top: 1px solid lightgrey;
+    position: absolute;
+    bottom: 41px;
+    left: 0;
+    right: 0;
+    align-self: center;
+    height: 40px;
+    width: 100%;
+    background-color: #eeefee;
+    display: flex;
+    justify-content: space-between;
+}
 
 .rightside{
     border-right: 5px;
@@ -157,13 +164,6 @@ a:hover {
     text-decoration: underline;
 }
 
-#topside > a {
-    margin-left: 5px;
-    margin-right: 5px;
-    padding: 10px;
-    outline: none;
-
-}
 
 .rightside  a {
     color: gray;
@@ -181,19 +181,10 @@ a:hover {
     
 }
 
-.button:hover {
-    border: 1.5px solid lightgray;
-}
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
 
 /* Phone sized viewpoints */
-@media (max-width: 600px){
+@media only screen and (max-width: 414px) and (max-height: 600px){
     /* Header */
 
     /* Body */
@@ -221,7 +212,8 @@ form {
     #bottom {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
+        position: absolute;
+        bottom: 0;
         height: 75px;
         justify-content: center;
     }
