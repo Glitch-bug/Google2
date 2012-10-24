@@ -25,9 +25,8 @@
 }
 #topside {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    border: 1px solid blue;
+    top: 18.5px;
+    right: 57px;
     display: inline;
 }
 
@@ -63,11 +62,12 @@
 
 #profile {
     position: absolute;
+    top: 0;
     right: 0;
     width: 37px;
     height: 37px;
     border-radius: 100%;
-    margin-left: 10px;
+    margin: 10px;
 }
 
 #buttons {
@@ -135,6 +135,7 @@ a:hover {
     margin-left: 5px;
     margin-right: 5px;
     padding: 10px;
+    outline: none;
 
 }
 
