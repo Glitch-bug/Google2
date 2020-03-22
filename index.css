@@ -48,6 +48,9 @@
 }
 form {
     width: 100%;
+    display: flex;
+    align-items: center;
+    flex-flow: nowrap column;
 }
 #search {
     position: absolute;
@@ -62,6 +65,7 @@ form {
 #bar {
     width: 47em;
     height: 3.2em;
+    justify-self: center;
     border-radius: 30px;
     border:1px solid lightgray;
     text-indent: 40px;
@@ -80,6 +84,7 @@ form {
 
 #lingo {
     margin-top: 2%;
+    width: 100%;
     font-size: smaller;
     display: flex;
     flex-direction: row;
@@ -189,6 +194,10 @@ a:hover {
     /* Header */
 
     /* Body */
+    #search_form {
+        padding-top: 20%;
+    }
+
     #google {
         padding-top: 0.5%;
         width: 10em;
