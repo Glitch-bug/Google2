@@ -1,0 +1,161 @@
+#search {
+    object-fit: cover;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 212px;
+    left: 27.5%;
+}
+
+
+#google {
+    padding-left: 27%;
+    padding-bottom: 20px;
+
+}
+
+
+#search_form {
+    margin-top: 6%;
+    margin-left: 26%;
+    margin-right: 26%;
+    padding-top: 0;
+    padding-left: 0;
+    font-family: sans-serif;
+}
+#topside {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 1px solid blue;
+    display: inline;
+}
+
+#bottom {
+    border-top: 1px solid lightgrey;
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    background-color: #eeefee;
+    display: inline;
+}
+
+#near_bottom {
+    border-top: 1px solid lightgrey;
+    position: absolute;
+    bottom: 41px;
+    align-self: center;
+    height: 40px;
+    width: 100%;
+    background-color: #eeefee;
+    display: inline;
+}
+
+#bar {
+    width: 47em;
+    height: 3.2em;
+    border-radius: 30px;
+    border:1px solid lightgray;
+    text-indent: 40px;
+    outline: none;
+}
+
+#profile {
+    position: absolute;
+    right: 0;
+    width: 37px;
+    height: 37px;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+
+#buttons {
+    margin-top: 35px;
+    margin-left: 24%;
+}
+
+#lingo {
+    margin-top: 5%;
+    font-size: smaller;
+    margin-left: 3.5%;
+}
+
+#lingo > a {
+    padding-left: 0.7%;
+    padding-right: 0.7%;
+    color: blue;
+}
+
+#lingo > a:hover {
+    text-decoration: underline;
+}
+
+.button{
+    font-family: Arial;
+    font-size: 15px;
+    border-radius: 5px;
+    border-style: none;
+    height: 35px;
+    width: 130px;
+    margin-left: 10px;
+    background-color: rgb(247, 250, 247);
+}
+
+
+.rightside{
+    position: absolute;
+    right: 10px;
+    display: inline;
+    margin-top: 10px;
+}
+
+.leftside{
+    position: absolute;
+    left: 2px;
+    display: inline;
+    margin-top: 10px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: small;
+}
+
+
+
+a:hover {
+    text-decoration: underline;
+}
+
+#topside > a {
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+
+}
+
+.rightside  a {
+    color: gray;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+.leftside > a {
+    color: gray;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.button:hover {
+    border: 1.5px solid lightgray;
+}
+
+form {
+    display: inline;
+}
