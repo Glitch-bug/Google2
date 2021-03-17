@@ -1,33 +1,50 @@
+/* Laptop sized viewports */
+/* top */
+/* body */
+/* base */
 #search {
-    object-fit: cover;
-    width: 15px;
-    height: 15px;
     position: absolute;
-    top: 212px;
-    left: 27.5%;
+    left: 28%;
+    padding-top: 15px;
+    object-fit: cover;
+    width: 15.5px;
+    height: 15.5px;
+    justify-self: center;
 }
 
 
-#google {
-    padding-left: 27%;
-    padding-bottom: 20px;
-
+body {
+    display: flex;
 }
-
 
 #search_form {
-    margin-top: 6%;
-    margin-left: 26%;
-    margin-right: 26%;
+    margin-top: 5%;
+    width: 100%;
     padding-top: 0;
     padding-left: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
     font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
+
+#google {
+    padding-bottom: 20px;
+}
+
 #topside {
     position: absolute;
-    top: 18.5px;
-    right: 57px;
-    display: inline;
+    top: 0;
+    right: 0;
+    margin: 0.05%;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 #bottom {
@@ -35,10 +52,13 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    right: 0;
     height: 40px;
     width: 100%;
     background-color: #eeefee;
-    display: inline;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #near_bottom {
@@ -46,11 +66,13 @@
     position: absolute;
     bottom: 41px;
     left: 0;
+    right: 0;
     align-self: center;
     height: 40px;
     width: 100%;
     background-color: #eeefee;
-    display: inline;
+    display: flex;
+    justify-content: space-between;
 }
 
 #bar {
@@ -67,29 +89,30 @@
 }
 
 #profile {
-    position: absolute;
-    top: 0;
-    right: 0;
     width: 37px;
     height: 37px;
     border-radius: 100%;
-    margin: 10px;
+    
 }
 
 #buttons {
-    margin-top: 35px;
-    margin-left: 24%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
 }
 
 #lingo {
-    margin-top: 5%;
+    margin-top: 2%;
     font-size: smaller;
-    margin-left: 3.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
 }
 
 #lingo > a {
-    padding-left: 0.7%;
-    padding-right: 0.7%;
+    padding-left: 0.85%;
+    padding-right: 0.85%;
     color: blue;
 }
 
@@ -110,15 +133,13 @@
 
 
 .rightside{
-    position: absolute;
-    right: 10px;
+    border-right: 5px;
     display: inline;
     margin-top: 10px;
 }
 
 .leftside{
-    position: absolute;
-    left: 2px;
+    border-left: 5px;
     display: inline;
     margin-top: 10px;
 }
@@ -137,7 +158,6 @@ a:hover {
 }
 
 #topside > a {
-    margin-bottom: 20px;
     margin-left: 5px;
     margin-right: 5px;
     padding: 10px;
@@ -150,6 +170,7 @@ a:hover {
     padding-left: 10px;
     padding-right: 10px;
     font-size: 14px;
+    
 }
 
 .leftside > a {
@@ -157,6 +178,7 @@ a:hover {
     padding-right: 10px;
     padding-left: 10px;
     font-size: 14px;
+    
 }
 
 .button:hover {
@@ -164,5 +186,53 @@ a:hover {
 }
 
 form {
-    display: inline;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Phone sized viewpoints */
+@media (max-width: 600px){
+    /* Header */
+
+    /* Body */
+    #google {
+        width: 12em;
+        height: 3.2em;
+    }
+
+    #search {
+        position: absolute;
+        padding: .5em;
+        left: 3%;
+    }
+
+    #bar {
+        width: 97%;
+        height: 2.2em;
+    }
+    
+    .button {
+        display: none;
+    }
+
+    /* Base */
+    #bottom {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 75px;
+        justify-content: center;
+    }
+
+    #near_bottom {
+        position: absolute;
+        bottom: 76px;
+    }
+
+    #rightside {
+        order: -1;
+    }
+
 }
