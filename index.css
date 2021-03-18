@@ -190,7 +190,8 @@ a:hover {
 
     /* Body */
     #google {
-        width: 12em;
+        padding-top: 0.5%;
+        width: 10em;
         height: 3.8em;
     }
 
