@@ -74,12 +74,18 @@ form {
 }
 
 #look {
-    position:absolute;
-    right: 28%;
-    padding-top: 5px;
     object-fit: cover;
     width: 25px;
     height: 37px;
+}
+
+#b-look {
+    position:absolute;
+    right: 28%;
+    padding-top: 5px;
+    outline: none;
+    border: none;
+    background: none;
 }
 
 #bar {
@@ -231,19 +237,19 @@ a:hover {
 
     #search {
         position: absolute;
-        padding: .5em;
+        padding-top: .7em;
         left: 3%;
     }
-
-    #look {
+    
+    #b-look {
         position:absolute;
+        padding: 0;
         right: 3%;
-        margin-bottom: 30px;
     }
 
     #bar {
         width: 97%;
-        height: 2.2em;
+        height: 2.7em;
     }
     
     .button {
