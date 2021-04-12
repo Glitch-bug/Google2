@@ -1,9 +1,12 @@
 /* Laptop sized viewports */
+html {
+    height: 100%;
+}
 /* top */
 #topside {
     align-self: flex-end;
     order: 1;
-    margin-top: 0.05%;
+    padding-top: 0.05%;
     height: fit-content;
     width: fit-content;
     display: flex;
@@ -19,8 +22,6 @@
 }
 
 #topside > a {
-    margin-left: 5px;
-    margin-right: 5px;
     padding: 10px;
     outline: none;
 
@@ -31,13 +32,9 @@
 body {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    margin-right: 50px;
     height: 100%;
     width: 100%;
+    margin: 0;
 }
 
 #google {
@@ -156,39 +153,36 @@ form {
 /* base */
 #bottom {
     order: 4;
-    align-self: stretch;
     justify-self: flex-end;
     border-top: 1px solid lightgrey;
     height: 40px;
     width: 100%;
     background-color: #eeefee;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
 #near_bottom {
     order: 3;
     border-top: 1px solid lightgrey;
-    left: 0;
-    right: 0;
-    align-self: center;
+    justify-self: flex-end;
     height: 40px;
     width: 100%;
     background-color: #eeefee;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
 .rightside{
     border-right: 5px;
     display: inline;
-    margin-top: 10px;
 }
 
 .leftside{
     border-left: 5px;
     display: inline;
-    margin-top: 10px;
 }
 
 a {
