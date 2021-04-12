@@ -259,12 +259,25 @@ a:hover {
     }
 
     /* Base */
+    #nearbottom {
+        height: auto;
+        padding: 55%;
+    }
+
     #bottom {
         display: flex;
         flex-wrap: wrap-reverse;
-        height: 75px;
+        height: auto;
         justify-content: center;
         align-items: center;
+    }
+
+    .leftside {
+        margin-top: 1%; 
+    }
+
+    .rightside {
+        margin-top: 1%; 
     }
 
     .leftside > a {
