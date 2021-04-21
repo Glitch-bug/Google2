@@ -8,11 +8,42 @@
   </head>
   <body>
     <div id="topside"> 
-      <img id="google" src="images/googlelogo_color_272x92dp.png">
+      <a href="index.html"><img id="google" src="images/googlelogo_color_272x92dp.png"></a>
       <img id="profile" src="images/blank-profile.png">
     </div>
     <div id="adv-container">
       <p>Advanced Search</p>
+    </div>
+    <div id="search-form">
+      <div id="form-header">
+        <p id="l">Find pages with...</p>
+        <p id="r">To do this in the search box.</p>
+      </div>
+      <form id="form" action="https://google.com/search" method="GET" role="search">
+        <div id="frm-container">
+          <div id="left">
+            <p>all these words:</p>
+            <p>this exact word or phrase:</p>
+            <p>any of these words:</p>
+            <p>none of these words:</p>
+          </div>
+          <div id="middle">
+            <div id= bars>
+              <input class="bar" type="text" name="as_q"> 
+              <input class="bar" type="text" name="as_epq">
+              <input class="bar" type="text" name="as_oq">
+              <input class="bar" type="text" name="as_eq">
+            </div>
+            <input id="button" type="submit" value="Advanced Search">
+          </div>
+          <div id="right">
+            <p>Type the important words: tri-colour rat terrier</p>
+            <p>Put exact words in quotes: "rat terrier"</p>
+            <p>Type OR between all the words you want: minature OR standard</p>
+            <p>Put a minus sign just before the words you don't want: -rodent -"Jack Russell"</p>
+          </div>
+        </div>
+      </form>
     </div>
   </body>
 </html>
